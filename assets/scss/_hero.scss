@@ -13,18 +13,23 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
 
         h1 {
             text-align: center;
-            font-size: 7.5rem;
+            font-size: 6.5rem;
             background: -webkit-linear-gradient(0.5turn, #8b8c8c, #fefefe, #929292);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
 
             strong {
-                font-size: 14rem;
+                font-size: 12rem;
                 font-weight: 800;
+                letter-spacing: 1px;
             }
+        }
+        p {
+            color: #fff;
         }
     }
 }

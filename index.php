@@ -8,9 +8,10 @@
   <section class="banner-area">
 
     <div class="container h-100">
-      <div class="row h-100">
-        <div class="col-12 banner-content">
-          <h1><strong>ALCANCE</strong><br>O SUCESSO DIGITAL</h1>
+      <div class="row h-100 justify-content-center">
+        <div class="col-10 banner-content">
+          <h1 class="word-speed" data-speed="2"><strong>ALCANCE</strong><br>O SUCESSO DIGITAL</h1>
+          <p class="word-speed" data-speed="1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias iusto porro itaque dolores alias culpa, sequi provident, aperiam, optio praesentium error eius? Dignissimos nulla qui magnam quos reprehenderit ipsum consectetur.</p>
         </div>
       </div>
     </div>

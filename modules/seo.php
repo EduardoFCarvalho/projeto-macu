@@ -99,7 +99,7 @@ $descriptionHome = 'Descrição da Home';
   <meta name="revisit-after" content="2 days">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <script src="https://kit.fontawesome.com/75eaba243c.js" crossorigin="anonymous"></script>
+  <script async src="https://kit.fontawesome.com/75eaba243c.js" crossorigin="anonymous"></script>
   <!-- <script src="js/carouzel.min.js"></script> -->
 
   <!-- Favicon -->
