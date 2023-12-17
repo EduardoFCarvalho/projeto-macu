@@ -16,7 +16,7 @@
         h1,
         span {
             color: #fff;
-            font-size: 4em;
+            font-size: 4rem;
             font-weight: 900;
             text-transform: uppercase;
             letter-spacing: 5px;
@@ -30,7 +30,7 @@
             }
 
             @media #{$md} {
-                font-size: 3.5em;
+                font-size: 3.5rem;
                 line-height: 60px;
 
                 b {
@@ -39,7 +39,7 @@
             }
 
             @media #{$sm} {
-                font-size: 3em;
+                font-size: 3rem;
                 line-height: 60px;
 
                 b {
@@ -48,7 +48,7 @@
             }
 
             @media #{$xs} {
-                font-size: 2.8em;
+                font-size: 2.8rem;
                 margin-bottom: 15px;
                 line-height: 60px;
 
@@ -96,6 +96,123 @@
 
 }
 
+.about-area {
+    span {
+        font-size: 1.5rem;
+        font-weight: 900;
+        line-height: 1.875rem;
+        margin-bottom: 1rem;
+        @media(max-width: 768px) {
+            font-size: 1.25rem;
+            line-height: 1.5rem;
+        }
+        @media(max-width: 576px) {
+            font-size: 1.125rem;
+            line-height: 1.25rem;
+        }
+    }
+
+    h2 {
+        font-size: 3rem;
+        font-weight: 900;
+        line-height: 3.75rem;
+        margin-bottom: 1rem;
+        @media(max-width: 768px) {
+            font-size: 2.5rem;
+            line-height: 3rem;
+        }
+        @media(max-width: 576px) {
+            font-size: 2rem;
+            line-height: 2.25rem;
+        }
+    }
+    p {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.25rem;
+        text-align: justify;
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 450px;
+        max-height: 450px;
+    }
+}
+
+.project-area {
+    span {
+        font-size: 1.5rem;
+        font-weight: 900;
+        line-height: 1.875rem;
+        margin-bottom: 1rem;
+        @media(max-width: 768px) {
+            font-size: 1.25rem;
+            line-height: 1.5rem;
+        }
+        @media(max-width: 576px) {
+            font-size: 1.125rem;
+            line-height: 1.25rem;
+        }
+    }
+
+    h2 {
+        font-size: 3rem;
+        font-weight: 900;
+        line-height: 3.75rem;
+        margin-bottom: 1rem;
+        @media(max-width: 768px) {
+            font-size: 2.5rem;
+            line-height: 3rem;
+        }
+        @media(max-width: 576px) {
+            font-size: 2rem;
+            line-height: 2.25rem;
+        }
+    }
+    p {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.25rem;
+        text-align: justify;
+    }
+    img {
+        position: relative;
+        display: block;
+        height: 360px;
+        border-radius: 20px;
+        margin: 0 auto;
+        z-index: 1;
+    
+    }
+    ul {
+        li {
+            margin-left: 15px;
+            list-style: circle;
+        }
+    }
+    .view-effect{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        height: 400px;
+        &::before {
+            content: "";
+            display: block;
+            width: auto;
+            height: 100%;
+            aspect-ratio: 1/1;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(-20%,-50%);
+            border-radius: 50%;
+            background-color: #f0a429;
+            z-index: 0;
+        }
+    }
+}
 
 .creation-card {
     color: #252525;
@@ -121,7 +238,7 @@
         top: 0;
         left: 0;
         opacity: .25;
-        border-radius: 40%;
+        border-radius: 35%;
         transition: all .35s ease;
     }
 
@@ -129,6 +246,7 @@
         position: relative;
         top: 0;
         transition: all .3s ease;
+
         h2 {
             color: currentcolor;
             font-size: 2rem;
@@ -146,9 +264,10 @@
             background-image: url(../img/logo/card-logo-c.png);
             background-color: #fff;
             opacity: .65;
-            box-shadow: 2px 2px 3px rgba(0,0,0, .15);
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, .15);
             transition: all .35s ease;
         }
+
         .card-content {
             position: relative;
             top: -5px;
@@ -157,13 +276,15 @@
     }
 }
 
-.word-speed { 
+.word-speed {
     transform: translateY(0);
     transition: all .3s ease-out;
+
     &.translateStage1 {
         transform: translateY(-50px);
         transition: all .3s ease-out;
     }
+
     &.translateStage2 {
         transform: translateY(-100px);
         transition: all .3s ease-out;

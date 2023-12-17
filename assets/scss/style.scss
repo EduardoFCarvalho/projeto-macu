@@ -38,7 +38,7 @@ p {
 	line-height: 22px;
 }
 
-img{
+img {
 	width: 100%;
 	height: auto;
 }
@@ -110,4 +110,24 @@ section {
 		background-color: $theme-color2;
 	}
 
+}
+
+.h-100 {
+	height: 100% !important;
+}
+
+.white-bgd {
+	background-color: #fff !important;
+}
+
+.light-bgd {
+	background-color: #f0f0f0 !important;
+}
+
+.medium-bgd {
+	background-color: gray;
+}
+
+.heavy-bgd {
+	background-color: gray;
 }

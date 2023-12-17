@@ -38,7 +38,7 @@ async function runWordsScroll() {
     }
 
     window.addEventListener("scroll", scrollHandler);
-  })(documentLoaded);
+  })
 
 } runWordsScroll()
 
