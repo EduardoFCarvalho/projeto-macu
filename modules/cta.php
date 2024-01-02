@@ -1,5 +1,5 @@
 <sectio>
-  <div class="comtainer-fluid cta-section">
+  <div class="comtainer-fluid cta-section glass">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 mb-5 align-center">
@@ -14,5 +14,6 @@
         </div>
       </div>
     </div>
+
   </div>
 </sectio>

@@ -4,7 +4,7 @@
 
 // ========== SITE ==========
 
-define("CONF_TAG_BASE", "");
+define("CONF_TAG_BASE", "https://www.localhost/macunaima/site-macunaima/projeto-macu/");
 
 define("CONF_SITE_NAME","Projeto Macunaima");
 
@@ -21,7 +21,7 @@ define("CONF_SITE_STREET_2","bairro, São Paulo - SP");
 define("CONF_SITE_MAP_IFRAME","");
 define("CONF_SITE_MAP_LINK","");
 
-define("CONF_SITE_EMAIL","contato@teste.com.br");
+define("CONF_SITE_EMAIL", "contato@teste.com.br");
 
 // ========== MIDIAS ==========
 

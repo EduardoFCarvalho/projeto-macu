@@ -9,44 +9,42 @@ $activePage = basename($_SERVER['REQUEST_URI']);
 # ----------------------------------------
 # Cases
 # ----------------------------------------
-switch($activePage)
-{
+switch ($activePage) {
   case "empresa":
-  $title       = "Empresa";
-  $description = "";
-  break;
+    $title       = "Empresa";
+    $description = "";
+    break;
 
-  case "produtos":
-  $title       = "Produtos";
-  $description = "";
-  break;
+  case "servicos":
+    $title       = "Serviços";
+    $description = "";
+    break;
 
   case "contato":
-  $title       = "Contato";
-  $description = "Entre em contato com o , atuamos com dedicação e qualidade no segmento na área de ferramentaria e estamparia. Clique aqui para saber mais.";
-  break;
+    $title       = "Contato";
+    $description = "Entre em contato com o , atuamos com dedicação e qualidade no segmento na área de ferramentaria e estamparia. Clique aqui para saber mais.";
+    break;
 
   case "politica-de-privacidade":
-  $title       = "Política de Privacidade";
-  $description = "Conheça a política de privacidade do  ! Nós temos compromisso de manter sua privacidade durante o processo de navegação. Clique aqui e confira.";
-  break;
+    $title       = "Política de Privacidade";
+    $description = "Conheça a política de privacidade do  ! Nós temos compromisso de manter sua privacidade durante o processo de navegação. Clique aqui e confira.";
+    break;
 
   case "mapa-do-site":
-  $title       = "Mapa do Site";
-  $description = "Confira o mapa do site do  e tenha acesso as nossas páginas e produtos do segmento na área de ferramentaria e estamparia. Clique aqui e confira.";
-  break;
+    $title       = "Mapa do Site";
+    $description = "Confira o mapa do site do  e tenha acesso as nossas páginas e produtos do segmento na área de ferramentaria e estamparia. Clique aqui e confira.";
+    break;
 
   case "obrigado":
-  $title       = "Agradecimento";
-  $description = "Obrigado por ter preenchido nosso formulário, será um prazer esclarecer as suas dúvidas. Entraremos em contato na medida do possível.";
-  break;
-
+    $title       = "Agradecimento";
+    $description = "Obrigado por ter preenchido nosso formulário, será um prazer esclarecer as suas dúvidas. Entraremos em contato na medida do possível.";
+    break;
 }
 
-$keywords="";
+$keywords = "";
 
 $proto = (isset($_SERVER['HTTPS']) === true) ? 'https' : 'http';
-$canonical = $proto.'://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+$canonical = $proto . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 
 $titleHome = 'Home';
 $descriptionHome = 'Descrição da Home';
@@ -69,17 +67,17 @@ $descriptionHome = 'Descrição da Home';
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Meta Tags -->
   <meta name="description" content="<?= !empty($description) ? $description : $descriptionHome ?>">
-  <meta name="keywords" content="<?=$keywords?>">
+  <meta name="keywords" content="<?= $keywords ?>">
   <!-- Canonical -->
-  <link rel="canonical" href="<?=$canonical?>">
+  <link rel="canonical" href="<?= $canonical ?>">
   <!-- OpenGraph -->
   <meta property="og:region" content="Brasil">
-  <meta property="og:title" content="<?=$title?>">
+  <meta property="og:title" content="<?= !empty($title) ? $title : $titleHome ?>">
   <meta property="og:type" content="article">
-  <meta property="og:description" content="<?=$description?>">
-  <meta property="og:site_name" content="<?=$title?>">
-  <meta property="og:keywords" content="<?=$keywords?>">
-  <meta property="og:canonical" content="<?=$canonical?>">
+  <meta property="og:description" content="<?= !empty($description) ? $description : $descriptionHome ?>">
+  <meta property="og:site_name" content="<?= !empty($title) ? $title : $titleHome ?>">
+  <meta property="og:keywords" content="<?= $keywords ?>">
+  <meta property="og:canonical" content="<?= $canonical ?>">
 
   <meta name="author" content="Macunaima Digital">
   <meta name="fone" content="11 1234-5678">

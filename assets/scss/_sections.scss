@@ -281,12 +281,14 @@
     transition: all .3s ease-out;
 
     &.translateStage1 {
-        transform: translateY(-50px);
-        transition: all .3s ease-out;
-    }
-
-    &.translateStage2 {
-        transform: translateY(-100px);
-        transition: all .3s ease-out;
+        transform: translateY(0);
+        opacity: 1;
+        transition: all .2s ease-out;
+        
+        &.translateStage2 {
+            transform: translateY(-300px);
+            opacity: 0;
+            transition: all .3s ease-out;
+        }
     }
 }
