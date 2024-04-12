@@ -1,5 +1,6 @@
 async function runWordsScroll() {
-  var documentLoaded = await document.addEventListener('DOMContentLoaded', () => {
+  const domLoaded = await domContentLoaded.getPromise();
+  if (domLoaded) {
     function scrollHandler() {
       // Obtém todos os elementos com a classe "word"
       const words = document.querySelectorAll(".word-speed");
@@ -38,7 +39,7 @@ async function runWordsScroll() {
     }
 
     window.addEventListener("scroll", scrollHandler);
-  })
+  }
 
 } runWordsScroll()
 

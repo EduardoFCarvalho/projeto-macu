@@ -9,7 +9,7 @@
         <nav class="navbar">
             <ul class="nav-list">
                 <li><a href="./">Home</a></li>
-                <li><a href="#">Empresa</a></li>
+                <li><a href="empresa">Empresa</a></li>
                 <li><a href="#">Serviços</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>

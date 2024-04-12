@@ -1,5 +1,6 @@
 async function runTopMenu() {
-  var topMenuDomLoaded = await document.addEventListener('DOMContentLoaded', () => {
+  const domLoaded = await domContentLoaded.getPromise();
+  if (domLoaded) {
 
     const topMenu = document.getElementById('mobile-menu');
 
@@ -12,5 +13,6 @@ async function runTopMenu() {
         // navbar.style.display = (navbar.style.display === 'block') ? 'none' : 'block';
       });
     }
-  })
+  }
+
 } runTopMenu()

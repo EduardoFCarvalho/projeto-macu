@@ -1,6 +1,9 @@
+"use strict";
 async function runPrivacity() {
-    var privacityDomLoaded = await window.addEventListener('load', function () {
-        if (!sessionStorage.lgpd || !localStorage.lgpd) {
+    const domLoaded = await domContentLoaded.getPromise();
+    if (domLoaded) {
+
+        if (!sessionStorage.lgpd && !localStorage.lgpd) {
             const btnLGPD = document.querySelector('.accept');
             const boxLGPD = document.querySelector('.lgpd');
             // console.log(btnLGPD);
@@ -12,5 +15,6 @@ async function runPrivacity() {
                 boxLGPD.style.display = 'none';
             })
         }
-    })
+
+    }
 } runPrivacity()
