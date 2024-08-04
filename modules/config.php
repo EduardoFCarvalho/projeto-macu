@@ -3,9 +3,9 @@
 // ================= ARQUIVO DE CONFIGURAÇÃO DO SITE ===================
 
 // ========== SITE ==========
-
-// define("CONF_TAG_BASE", "https://www.macunaimadigital.com.br/novo/");
-define("CONF_TAG_BASE", "https://localhost/macunaima/site-macunaima/projeto-macu/");
+// 
+define("CONF_TAG_BASE", "https://www.macunaimadigital.com.br/novo/");
+// define("CONF_TAG_BASE", "https://localhost/macunaima/site-macunaima/projeto-macu/");
 
 define("CONF_SITE_NAME","Projeto Macunaima");
 

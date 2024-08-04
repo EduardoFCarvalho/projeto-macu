@@ -27,14 +27,14 @@ async function runSwiperConfigs() {
     });
 
     const projectLista = document.querySelectorAll('.project-list li');
-    console.log(projectLista);
+    // console.log(projectLista);
 
     swiper.on('slideChange', function () {
-      console.log(swiper.activeIndex);
+      // console.log(swiper.activeIndex);
       // const activeSlide = swiper.slides[swiper.activeIndex].getAttribute('aria-label');
       const activeSlidePos = swiper.activeIndex;
 
-      if(activeSlidePos != null && activeSlidePos != undefined) {
+      if (activeSlidePos != null && activeSlidePos != undefined) {
         projectLista.forEach((proj, i) => {
           proj.classList.remove('current');
         });
@@ -42,7 +42,7 @@ async function runSwiperConfigs() {
       }
     });
 
-    if(projectLista) {
+    if (projectLista) {
       projectLista.forEach((proj, i) => {
         proj.addEventListener('click', () => {
           swiper.slideTo(i);
@@ -50,7 +50,21 @@ async function runSwiperConfigs() {
       })
     }
 
-    
+    //====================================== Marquee Carousel ==============================================
+
+    let SwiperTop = new Swiper('.swiper-marquee', {
+  
+      spaceBetween: 0,
+      centeredSlides: true,
+      speed: 6000,
+      autoplay: {
+        delay: 1,
+      },
+      loop: true,
+      slidesPerView: 4.5,
+      allowTouchMove: false,
+      disableOnInteraction: true
+    });
 
     //====================================== Brand Carousel ==============================================
     // var swiper = new Swiper(".brandSwiper", {

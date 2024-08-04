@@ -10,8 +10,8 @@
             <ul class="nav-list">
                 <li><a href="./">Home</a></li>
                 <li><a href="empresa">Empresa</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="servicos">Serviços</a></li>
+                <li><a href="contato">Contato</a></li>
             </ul>
         </nav>
 

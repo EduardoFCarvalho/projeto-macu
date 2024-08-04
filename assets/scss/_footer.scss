@@ -18,6 +18,11 @@
   a {
     color: #dadada;
   }
+  a {
+    &:hover {
+      color: $theme-font-hover;
+    }
+  }
 
   .links {
     text-align: center;

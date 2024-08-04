@@ -17,7 +17,7 @@
 }
 
 body {
-	background-color: rgb(241 245 249);
+	background-color: $bgd-body;
 	position: relative;
 }
 
@@ -48,7 +48,15 @@ section {
 }
 
 .section-padding {
-	padding: 4rem 0;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	h2, h3, h4, p, span {
+		display: block;
+		margin-bottom: 1.25rem;
+	}
+	p {
+		line-height: 1.5rem;
+	}
 }
 
 
@@ -135,3 +143,34 @@ section {
 .text-center {
 	text-align: center !important;
 }
+
+@mixin random-spot($base-color, $position) {
+	$size: random(10) + 40 * 10px; // Tamanho entre 400px e 500px
+	$x: if($position == 'left', 7%, 65%); // Posição no eixo x intercalada entre 15% e 85%
+	$y: 50%;
+	$color: darken($base-color, 7%); // Cor base
+
+	// Criar o círculo
+	&::before {
+		content: "";
+		position: absolute;
+		width: $size;
+		height: $size;
+		background: radial-gradient(ellipse at center, rgba($color, 1) 0%, rgba($color, 0) 70%); // Degrade esfumaçado
+		border-radius: 50%;
+		top: $y;
+		left: $x;
+		z-index: -1; // Ajustar z-index para garantir que todos os círculos sejam visíveis
+	}
+}
+
+.spots-l {
+	position: relative;
+	@include random-spot($bgd-body, 'left');
+}
+
+.spots-r {
+	position: relative;
+	@include random-spot($bgd-body, 'right');
+}
+

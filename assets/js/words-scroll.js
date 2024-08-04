@@ -17,8 +17,8 @@ async function runWordsScroll() {
           }
 
           // Verifica se o elemento está perto dos 25% da tela
-          if (position.y > window.innerHeight * 0.25 - word.offsetHeight / 2 &&
-            position.y < window.innerHeight * 0.25 + word.offsetHeight / 2) {
+          if (position.y > window.innerHeight * 0.15 - word.offsetHeight / 2 &&
+            position.y < window.innerHeight * 0.15 + word.offsetHeight / 2) {
             word.classList.remove("translateStage2");
           }
 
@@ -26,7 +26,7 @@ async function runWordsScroll() {
             word.classList.add("translateStage1");
           }
 
-          if (position.y < window.innerHeight * 0.25 - word.offsetHeight / 2) {
+          if (position.y < window.innerHeight * 0.15 - word.offsetHeight / 2) {
             word.classList.add("translateStage2");
           }
 
